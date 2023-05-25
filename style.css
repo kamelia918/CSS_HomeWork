@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
     position: absolute;
     display: flex;
-    color: rgba(0, 0, 0, 0.32);
+    
     left: 330px;
     padding: 0;
 }
@@ -36,10 +36,19 @@ nav{
 .barre > div {
     padding: 0px;
 }
+.barre>div a {
+    color: rgba(0, 0, 0, 0.32);
+    text-decoration: none;
+}
 nav > div > img{
     width: 80px;
     height: 80px;
 }
+.barre >div a:hover {
+    color: #20A36C;
+}
+
+/*
 #div1 {
     color: #20A36C;
     width: 70px;
@@ -55,7 +64,7 @@ nav > div > img{
     bottom: -3px;
     border: 3px solid #20a36c;
     filter: blur(1.5px);
-}
+}*/
 #div6 > button{
     font-weight: 400;
     font-size: 18px;
@@ -70,6 +79,10 @@ nav > div > img{
     background: rgba(255, 255, 255, 0.16);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     right: 50px;
+}
+#div6 button:hover{
+    background-color: #20A36C;
+    color: rgba(255, 255, 255);;
 }
 /* ---------ACCUEIL---------------------------------------------------------------------------------------------------------------------------*/
 /* ---------ACCUEIL---------------------------------------------------------------------------------------------------------------------------*/
@@ -119,18 +132,7 @@ nav > div > img{
     text-transform: capitalize;
     color: #4D4B4B;
 }
-.read{
-    font-weight: 600;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 18px;
-    width: 210px;
-    height: 58px;
-    background: linear-gradient(90deg, #20A36C 8.64%, #52E6A7 95.76%);
-    border-radius: 10px;
-}
-.audio{
+.main button{
     font-weight: 600;
     border: 1px solid black;
     font-family: 'Poppins', sans-serif;
@@ -140,6 +142,12 @@ nav > div > img{
     height: 58px;
     background: linear-gradient(90deg, #F5F9FC 8.64%, #F5F9FC 95.76%);
     border-radius: 10px;
+}
+.main button:hover{
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: linear-gradient(90deg, #20A36C 8.64%, #52E6A7 95.76%);
 }
 
 /*------------------the about section --------------------------------------------------------------------------------------------------------*/
@@ -186,18 +194,6 @@ nav > div > img{
     text-transform: capitalize;
     color: #4D4B4B;
     margin: 40px;
-}
-.textcontainer > button{
-    font-weight: 600;
-    border: 2px solid #20A36C;
-    font-family: 'Poppins', sans-serif;
-    color: #37374D;;
-    font-size: 18px;
-    width: 210px;
-    height: 58px;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 30px;
 }
 .textcontainer{
     display: flex;
@@ -321,21 +317,11 @@ nav > div > img{
     margin-top: 0;
     line-height: 3px;
 }
-#vert .serch h1{
+.elfatiha >.ligne >div:hover{
     color: #FFFFFF;
-}
-#vert .serch h6{
-    color: #FFFFFF;
-}
-#vert .serch p{
-    color: #FFFFFF;
-}
-#vert{
     background: linear-gradient(90deg, #22A66E -1.91%, #4EE0A3 101.44%);
-        border: 1px solid #26AC73;
 }
-
-#vert::before {
+.elfatiha>.ligne>div:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -345,18 +331,8 @@ nav > div > img{
     border-radius: 10px;
     z-index: -1;
 }
-#vert>p {
-
-
+.elfatiha>.ligne>div:hover p {
     background: linear-gradient(90deg, #22A66E -1.91%, #4EE0A3 101.44%);
-
-}
-span{
-    background: linear-gradient(90deg, #FFFFFF -1.91%, #4EE0A3 101.44%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        border-inline-color: transparent;
 }
 /*---------------------Recitation-------------------------------------------------------------------------------------------------------------*/
 /*---------------------Recitation-------------------------------------------------------------------------------------------------------------*/
@@ -429,7 +405,10 @@ span{
     background-color: white;
     border-radius: 10px;
     margin-top: 0;
-
+}
+.more button:hover{
+    background-color: #20A36C;
+    color: white;
 }
 /*------------------FOOTER--------------------------------------------------------------------------------------------------------------------*/
 /*------------------FOOTER--------------------------------------------------------------------------------------------------------------------*/
@@ -540,7 +519,11 @@ form > button{
     font-weight: 700;
     font-family: 'Tajawal', sans-serif;
 }
-
+form>button:hover{
+    background-color:white;
+    border: 3px solid #49D99D;
+    color: #37374D;
+}
 .right{
     position: relative;
 }
